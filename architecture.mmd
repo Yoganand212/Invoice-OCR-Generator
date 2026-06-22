@@ -1,0 +1,9 @@
+graph TD
+  A[User] -->|Upload Invoice| B[Next.js Frontend]
+  B -->|HTTP POST| C[Express Backend]
+  C -->|Forward Image| D[FastAPI OCR Service]
+  D -->|EasyOCR| D
+  D -->|Return Raw Text| C
+  C -->|Regex Matching| E[Information Extraction Engine]
+  E -->|Structured Data| C
+  C -->|Prisma ORM| F[(PostgreSQL Database)]

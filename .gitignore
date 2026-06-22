@@ -1,0 +1,21 @@
+# Node & Next.js
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Python & OCR
+venv/
+__pycache__/
+*.pyc
+
+# Environment & DB
+.env
+dev.db
+backend/prisma/dev.db
+backend/prisma/*.db
+
+# User Uploads
+uploads/
+backend/uploads/
